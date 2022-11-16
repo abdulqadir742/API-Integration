@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:background="#F1F1F1"
-    android:layout_margin="20dp">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        >
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#F1F1F1">
 
     <ImageView
         android:id="@+id/newsImage"
@@ -27,7 +35,7 @@
         android:textStyle="bold"
         android:ems="10"
         android:text="TextView"
-        android:textSize="16dp"/>
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/newsDescription"
@@ -37,4 +45,5 @@
         android:layout_height="wrap_content"
         android:maxLines="2"
         android:text="TextView" />
-</LinearLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
